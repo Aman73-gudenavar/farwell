@@ -14,7 +14,6 @@ body {
 header {
     width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     padding: 1rem;
     background: rgb(0, 0, 0);
@@ -30,7 +29,7 @@ header {
 }
 
 .header-text {
-    text-align:left;
+    text-align: left;
 }
 
 main {
@@ -49,7 +48,6 @@ main {
 }
 
 .event-title {
-    
     font-size: 5rem;
 }
 
@@ -65,7 +63,7 @@ main {
 @media (max-width: 426px) {
     body {
         margin: 0;
-        padding-top: 80px; /* Adjust padding to match the height of the header */
+        padding-top: 60px; /* Adjust padding to match the height of the header */
         width: 100%; /* Ensure body takes full width */
         height: auto;
         display: flex;
@@ -79,7 +77,7 @@ main {
         position: fixed;
         top: 0;
         width: 100%;
-        justify-content: space-around;
+       
         align-items: center;
         padding: 10px;
         background-color: #000000;
@@ -94,15 +92,21 @@ main {
     }
 
     .header-text h1 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         animation: fadeInMobile 1s forwards;
-        line-height: 8px;
+        line-height: 1.2;
+        
     }
 
     .header-text h2 {
         font-size: 0.5rem;
         animation: fadeInMobile 1s forwards;
-        line-height: 6px;
+        line-height: 1;
+    }
+
+    main {
+        padding: 1rem;
+        width: 100%; /* Ensure main content takes full width */
     }
 
     .element-style {
@@ -111,7 +115,7 @@ main {
     }
 
     .event-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
         animation: fadeInMobile 1s forwards;
         font-family: 'Times New Roman', Times, serif;
     }
@@ -119,7 +123,7 @@ main {
     .venue, .date, .highlight {
         font-size: 1rem;
         animation: fadeInMobile 1s forwards;
-        line-height: 25px;
+        line-height: 1.5;
     }
 
     .line {
@@ -131,17 +135,18 @@ main {
 
     .organizers {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        line-height: 2;
+        line-height: 1.5;
         animation: fadeInMobile 1s forwards;
     }
 
     .organizer-name {
         font-weight: bold;
-        font-size: x-small;
+        font-size: small;
         animation: fadeInMobile 1s forwards;
     }
+
     .countdown-box {
         border: 2px solid #ccc;
         padding: 20px;
@@ -150,12 +155,14 @@ main {
         text-align: center;
         margin-top: 20px;
     }
+
     .countdown-item {
         display: inline-block;
         font-size: 20px;
         color: #000000;
         margin: 0 10px;
     }
+
     @keyframes fadeInMobile {
         from {
             opacity: 0;
